@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            AlertDialog.Builder(this)
+            val alert = AlertDialog.Builder(this)
                 .setTitle("학생 삭제 확인")
                 .setMessage("정말 ${longClickedStudent.name} 학생을 삭제하시겠습니까?")
                 .setPositiveButton("확인", DialogInterface.OnClickListener { dialog, which ->
